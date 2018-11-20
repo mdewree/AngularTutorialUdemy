@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-
 import { LoggingService } from '../logging.service';
 import { AccountsService } from '../accounts.service';
 
@@ -10,11 +9,11 @@ import { AccountsService } from '../accounts.service';
   // providers: [LoggingService]
 })
 export class AccountComponent {
-  @Input() account: {name: string, status: string};
+  @Input() account: { name: string, status: string };
   @Input() id: number;
 
   constructor(private loggingService: LoggingService,
-              private accountsService: AccountsService) {}
+    private accountsService: AccountsService) { }
 
   onSetTo(status: string) {
     this.accountsService.updateStatus(this.id, status);
