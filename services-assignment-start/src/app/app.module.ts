@@ -18,7 +18,6 @@ import { InactiveUsersComponent } from './inactive-users/inactive-users.componen
     FormsModule,
     HttpModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
